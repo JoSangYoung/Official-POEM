@@ -1,2 +1,2 @@
 # Official-POEM
-Domain generalization method code based on DomainBed
+Domain generalization code based on DomainBed
