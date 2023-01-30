@@ -34,8 +34,36 @@ python -m domainbed.scripts.download --data_dir=/my/datasets/path
 
 ## How to Run
 ---
+
+POEM
 ```
-CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --swad True --bool_angle True --bool_task True
+CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_angle True --bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_angle True --bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py OfficeHome_01_POEM --dataset OfficeHome --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_angle True --bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py TerraIncognita_01_POEM --dataset TerraIncognita --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_angle True -- bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM  --bool_angle True --bool_task True
+```
+
+MIRO + POEM
+```
+CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO  --bool_angle True --bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --bool_angle True --bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py OfficeHome_01_POEM --dataset OfficeHome --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --bool_angle True --bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py TerraIncognita_01_POEM --dataset TerraIncognita --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --bool_angle True -- bool_task True
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --bool_angle True --bool_task True
+```
+
+SWAD + POEM
+```
+CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --swad True --bool_angle True --bool_task True --swad True
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --swad True --bool_angle True --bool_task True
 
@@ -46,7 +74,7 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py TerraIncognita_01_POEM --dataset Terr
 CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --swad True --bool_angle True --bool_task True
 ```
 
-
+MIRO + SWAD + POEM
 ```
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --swad True --bool_angle True --bool_task True
 
