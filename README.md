@@ -1,19 +1,16 @@
 # POEM:Polarization of Embeddings for Domain-Invariant Representations (AAAI'23)
 
 
-## Paper
----
-["POEM:Polarization of Embeddings for Domain-Invariant Representations"]()
+Official PyTorch implementation of [POEM:Polarization of Embeddings for Domain-Invariant Representations.]()
 
-- ### Architecture of POEM
+### Architecture of POEM
 ![alt text](https://github.com/JoSangYoung/Official-POEM/blob/main/resources/Architecture_of_POEM.PNG?raw=true)
 
 
-- ### Performance of POEM
+### Performance of POEM
 ![alt text](https://github.com/JoSangYoung/Official-POEM/blob/main/resources/Performance.PNG?raw=true)
 
 ## Preparation
----
 ### Dependencies
 
 ```
@@ -37,6 +34,8 @@ python -m domainbed.scripts.download --data_dir=/my/datasets/path
 
 POEM
 ```
+mv POEM
+
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_angle True --bool_task True
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_angle True --bool_task True
@@ -50,6 +49,8 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet
 
 MIRO + POEM
 ```
+mv miro_POEM
+
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO  --bool_angle True --bool_task True
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --bool_angle True --bool_task True
@@ -63,6 +64,8 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet
 
 SWAD + POEM
 ```
+mv POEM
+
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --swad True --bool_angle True --bool_task True --swad True
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --swad True --bool_angle True --bool_task True
@@ -76,6 +79,8 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet
 
 MIRO + SWAD + POEM
 ```
+mv miro_POEM
+
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --swad True --bool_angle True --bool_task True
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --swad True --bool_angle True --bool_task True
@@ -86,3 +91,19 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py TerraIncognita_01_POEM --dataset Terr
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --swad True --bool_angle True --bool_task True
 ```
+
+## Citation
+```
+@article{jo2023poem,
+  title={POEM:Polarization of Embeddings for Domain-Invariant Representations},
+  author={Sang-Yeong Jo and Sung Whan Yoon},
+  journal={Association for the Advancement of Artificial Intelligence (AAAI)},
+  year={2023}
+}
+```
+
+
+## License
+This source code is released under the MIT license.
+
+This project includes some code from [DomainBed](https://github.com/facebookresearch/DomainBed), [SWAD](https://github.com/khanrc/swad), [MIRO](https://github.com/kakaobrain/miro), also MIT licensed.
