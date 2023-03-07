@@ -32,6 +32,21 @@ python -m domainbed.scripts.download --data_dir=/my/datasets/path
 ## How to Run
 ---
 
+ERM
+```
+cd POEM
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py VLCS_01_POEM --dataset VLCS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py OfficeHome_01_POEM --dataset OfficeHome --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py TerraIncognita_01_POEM --dataset TerraIncognita --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM
+
+CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM
+
+
 POEM
 ```
 cd POEM
