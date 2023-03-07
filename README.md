@@ -25,7 +25,7 @@ torchvision==0.9.1+cu111
 
 ### Datasets
 ```
-mv POEM
+cd POEM
 python -m domainbed.scripts.download --data_dir=/my/datasets/path
 ```
 
@@ -34,7 +34,7 @@ python -m domainbed.scripts.download --data_dir=/my/datasets/path
 
 POEM
 ```
-mv POEM
+cd POEM
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_angle True --bool_task True
 
@@ -49,7 +49,7 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet
 
 MIRO + POEM
 ```
-mv miro_POEM
+cd miro_POEM
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO  --bool_angle True --bool_task True
 
@@ -64,7 +64,7 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet
 
 SWAD + POEM
 ```
-mv POEM
+cd POEM
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM --bool_swad True --bool_angle True --bool_task True
 
@@ -79,7 +79,7 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet
 
 MIRO + SWAD + POEM
 ```
-mv miro_POEM
+cd miro_POEM
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py PACS_01_POEM --dataset PACS --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm MIRO --bool_swad True --bool_angle True --bool_task True
 
