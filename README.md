@@ -45,7 +45,7 @@ CUDA_VISIBLE_DEVICES=0 python train_all.py OfficeHome_01_POEM --dataset OfficeHo
 CUDA_VISIBLE_DEVICES=0 python train_all.py TerraIncognita_01_POEM --dataset TerraIncognita --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM
 
 CUDA_VISIBLE_DEVICES=0 python train_all.py DomainNet_01_POEM --dataset DomainNet --deterministic --trial_seed 'Your random seed' --data_dir ‘YOUR_DATASET_PATH’ --batch_size 32 --algorithm ERM
-
+```
 
 POEM
 ```
