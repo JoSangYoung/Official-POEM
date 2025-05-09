@@ -1,14 +1,14 @@
 # POEM:Polarization of Embeddings for Domain-Invariant Representations (AAAI'23)
 
 
-Official PyTorch implementation of [POEM:Polarization of Embeddings for Domain-Invariant Representations.]()
+Official PyTorch implementation of [POEM:Polarization of Embeddings for Domain-Invariant Representations.](https://arxiv.org/abs/2305.13046)
 
 ### Architecture of POEM
 ![alt text](https://github.com/JoSangYoung/Official-POEM/blob/main/resources/Architecture_of_POEM.PNG?raw=true)
 
 
 ### Performance of POEM
-![alt text](https://arxiv.org/abs/2305.13046)
+![alt text](https://github.com/JoSangYoung/Official-POEM/blob/main/resources/Performance.PNG)
 
 ## Preparation
 ### Dependencies
