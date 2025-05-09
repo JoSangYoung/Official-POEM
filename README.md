@@ -8,7 +8,7 @@ Official PyTorch implementation of [POEM:Polarization of Embeddings for Domain-I
 
 
 ### Performance of POEM
-![alt text](https://github.com/JoSangYoung/Official-POEM/blob/main/resources/Performance.PNG?raw=true)
+![alt text](https://arxiv.org/abs/2305.13046)
 
 ## Preparation
 ### Dependencies
